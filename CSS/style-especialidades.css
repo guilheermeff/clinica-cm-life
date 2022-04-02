@@ -1,0 +1,116 @@
+/* ########## ESTILOS GERAIS ########## */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ########## ESTILOS DO CORPO ########## */
+
+.barra-especialidades {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.links-especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.links-especialidades a {
+    text-decoration: none;
+    margin: 10px 20px;
+    color: #808080;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(87,203,209);
+}
+
+.links-especialidades a:hover {
+    color: #205067;
+}
+
+.text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ########## ESTILO TABELAS ########## */
+
+.boxes {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.cabecalho-tabelas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-tabelas p {
+    max-width: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    padding: 0 20px;
+}
+
+.tabela img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabela-especialidades tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.tabela thead tr {
+    color: #fff;
+    background-color: rgb(87,203,209);
+}
+
+.tabela-especialidades {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+}
+
+.tabela-especialidades tbody tr:nth-of-type(2n+1){
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+}
+
+.tabela-especialidades th,
+.tabela-especialidades td {
+    padding: 10px;
+}
+
+/* ########## INÍCIO DO RESPONSIVO ########## */
+
+@media (max-width: 768px) {
+    .tabela-especialidades { width: 100%; }
+    .tabela { height: auto; justify-content: center; }
+    .tabela img { display: none; }
+}
+
+@media (max-width: 425px) {
+    .tabela { padding: 0; }
+}
